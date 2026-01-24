@@ -123,7 +123,7 @@ export default {
       </div>
     </div>
 
-    <div id="places" class="text-8xl font-medium text-gray-900 text-center">
+    <div id="places" class="text-7xl font-medium text-gray-900 text-center">
       Наши филиалы
     </div>
 
