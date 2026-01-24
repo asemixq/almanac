@@ -46,7 +46,7 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-column h-screen bg-white w-full overflow-y-scroll">
+  <div class="flex flex-column h-screen w-full overflow-y-scroll main-bg-color">
     <div class="flex flex-row border-round-xl h-fit justify-content-between w-full">
       <div class="flex text-6xl px-4 py-2 font-medium text-gray-900">Coffee&Code</div>
       <div class="flex flex-row align-items-center">
@@ -61,7 +61,7 @@ export default {
       </div>
     </div>
 
-    <div class="w-full min-h-screen">
+    <div class="w-full min-h-screen main-bg-color">
       <MainPage />
     </div>
   </div>
@@ -73,15 +73,15 @@ export default {
   margin: 0;
 }
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 .main-bg-color {
-  background-color: #eee2dc;
+  background-color: rgb(222, 220, 212);
 }
 
 .menu-text-color {
   background: #ac3b61;
-}
-
-.my-font-color {
-  color: #123c69;
 }
 </style>
