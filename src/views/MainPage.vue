@@ -1,9 +1,18 @@
 <script>
+import {Dialog} from "primevue";
 
 export default {
   data() {
     return {
       currentIndex: 0,
+      showDialog: false,
+      formData: {
+        lastname: '',
+        firstname: '',
+        phone: '',
+        birthdate: '',
+        email: ''
+      },
       events: [
         {
           name: "Cходка милф",
@@ -56,16 +65,35 @@ export default {
   },
 
   components: {
-
+    Dialog
   },
 
   computed: {
     currentLocation() {
       return this.locations[this.currentIndex];
+    },
+    isFormValid() {
+      return (
+          this.formData.lastname.length >= 2 &&
+          this.formData.firstname.length >= 2 &&
+          this.formData.phone.length >= 10 &&
+          this.formData.birthdate &&
+          this.formData.email.includes('@')
+      );
     }
   },
 
   methods: {
+    closeDialog() {
+      this.showDialog = false;
+      this.formData = {
+        lastname: '',
+        firstname: '',
+        phone: '',
+        birthdate: '',
+        email: ''
+      }
+    },
     nextLocation() {
       if (this.currentIndex < this.locations.length - 1) {
         this.currentIndex++;
@@ -78,6 +106,11 @@ export default {
         this.currentIndex--;
       } else {
         this.currentIndex = this.locations.length - 1;
+      }
+    },
+    handleSubmit() {
+      if (this.isFormValid) {
+        this.showDialog = true;
       }
     }
   },
@@ -177,7 +210,7 @@ export default {
       Бонусная программа
     </div>
 
-    <div class="mx-6 gap-4">
+    <div class="mx-6">
       <div id="bonus" class="flex justify-content-between flex-row text-xl md:text-2xl border-round-3xl text-gray-900 p-4">
         <div>
           <span class="label_text_color text-2xl md:text-3x font-semibold">Ваша любовь к кофе окупается!</span><br>
@@ -194,63 +227,227 @@ export default {
       </div>
     </div>
 
-    <div class="flex flex-column md:flex-row justify-content-between mx-7 gap-4">
-      <div class="flex flex-row p-4 gap-3 w-full border-2 card-bg-color border-round-2xl shadow-2">
-        <div class="flex-shrink-0">
-          <div class="flex text-6xl label_text_color bg-primary-100 border-circle w-5rem h-5rem align-items-center justify-content-center">
-            1
+    <div class="flex w-full px-7 pb-4 gap-4">
+
+      <div class="flex flex-column md:flex-column justify-content-between gap-4 w-full">
+        <div class="flex flex-row p-4 gap-3 w-full border-2 card-bg-color border-round-2xl">
+          <div class="flex-shrink-0 h-full align-items-center">
+            <div class="flex text-6xl label_text_color bg-primary-100 border-circle w-5rem h-5rem align-items-center justify-content-center">
+              1
+            </div>
+          </div>
+          <div class="flex flex-column gap-2">
+            <p class="text-gray-900 text-2xl font-bold mb-2">Зарегистрируйтесь</p>
+            <p class="text-gray-900 text-xl">
+              ✔️ Сканируйте QR-код для мгновенной регистрации.<br>
+              ✔️ На номер телефона мы пришлем SMS с деталями.<br>
+              <br>
+              Либо воспользуйтесь классическим способом:<br>
+              Заполните контактную форму, и мы отправим вам подробное приглашение и условия программы на электронную почту.<br>
+              Ожидайте письмо в течение нескольких минут!
+            </p>
           </div>
         </div>
-        <div class="flex flex-column gap-2">
-          <p class="text-gray-900 text-2xl font-bold mb-2">Зарегистрируйтесь</p>
-          <p class="text-gray-900 text-lg">
-            Сканируйте QR-код или оставьте номер телефона, чтобы присоединиться к бонусной программе.
-          </p>
+
+        <div class="flex flex-row p-4 gap-3 w-full border-2 card-bg-color border-round-2xl">
+          <div class="flex-shrink-0">
+            <div class="flex text-6xl label_text_color bg-primary-100 border-circle w-5rem h-5rem align-items-center justify-content-center">
+              2
+            </div>
+          </div>
+          <div class="flex flex-column gap-2">
+            <p class="text-gray-900 text-2xl font-bold mb-2">Копите баллы</p>
+            <p class="text-gray-900 text-xl">
+              За каждый совершенный заказ вы гарантированно получаете бонусные баллы. ✨<br>
+              Они моментально и автоматически зачисляются на ваш персональный счет в программе лояльности,<br>
+              где накапливаются и никогда не сгорают.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-row p-4 gap-3 w-full border-2 card-bg-color border-round-2xl">
+          <div class="flex-shrink-0">
+            <div class="flex text-6xl label_text_color bg-primary-100 border-circle w-5rem h-5rem align-items-center justify-content-center">
+              3
+            </div>
+          </div>
+          <div class="flex flex-column gap-2">
+            <p class="text-gray-900 text-2xl font-bold mb-2">Получайте выгоду</p>
+            <p class="text-gray-900 text-xl">
+              Ваши баллы открывают доступ к целому каталогу наград. Вы можете:<br>
+              <br>
+              🔹Получить бесплатный напиток из нашего меню.<br>
+              🔹Использовать баллы для скидки на следующий заказ.<br>
+              🔹Получить доступ к специальным предложениям, созданным специально для наших постоянных гостей.<br>
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="flex flex-row p-4 gap-3 w-full border-2 card-bg-color border-round-2xl shadow-2">
-        <div class="flex-shrink-0">
-          <div class="flex text-6xl label_text_color bg-primary-100 border-circle w-5rem h-5rem align-items-center justify-content-center">
-            2
-          </div>
+      <form
+          id="contact-form"
+          class="flex gap-4 flex-column text-2xl text-gray-900 border-3 border-round-3xl border-white p-4 w-6"
+          @submit.prevent="handleSubmit"
+      >
+        <div class="flex flex-column text-3xl text-center w-full">
+          <p class="text-4xl label_text_color">Регистрация</p>
+          <p>в программе лояльности</p>
         </div>
+
         <div class="flex flex-column gap-2">
-          <p class="text-gray-900 text-2xl font-bold mb-2">Копите баллы</p>
-          <p class="text-gray-900 text-lg">
-            За каждый заказ получайте баллы, которые автоматически начисляются на ваш бонусный счет.
-          </p>
+          <label for="lastname">Ваша фамилия</label>
+          <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              v-model="formData.lastname"
+              placeholder="Введите фамилию"
+              required
+              minlength="2"
+              class="card-bg-color text-xl border-none p-2 border-round-xl text-gray-900"
+          >
         </div>
+
+        <div class="flex flex-column gap-2">
+          <label for="firstname">Ваше имя</label>
+          <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              v-model="formData.firstname"
+              placeholder="Введите имя"
+              required
+              minlength="2"
+              class="card-bg-color text-xl border-none p-2 border-round-xl text-gray-900"
+          >
+        </div>
+
+        <div class="flex flex-column gap-2">
+          <label for="phone">Номер телефона</label>
+          <input
+              type="tel"
+              id="phone"
+              name="phone"
+              v-model="formData.phone"
+              placeholder="+7 (999) 123-45-67"
+              required
+              pattern="[\+\-\d\s\(\)]{10,}"
+              class="card-bg-color text-xl border-none p-2 border-round-xl text-gray-900"
+          >
+        </div>
+
+        <div class="flex flex-column gap-2">
+          <label for="birthdate">Дата рождения</label>
+          <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              v-model="formData.birthdate"
+              required
+              max="2024-12-31"
+              class="card-bg-color text-xl border-none p-2 border-round-xl text-gray-900"
+          >
+        </div>
+
+        <div class="flex flex-column gap-2">
+          <label for="email">Электронная почта</label>
+          <input
+              type="email"
+              id="email"
+              name="email"
+              v-model="formData.email"
+              placeholder="example@mail.ru"
+              required
+              class="card-bg-color text-xl border-none p-2 border-round-xl text-gray-900"
+          >
+        </div>
+
+        <div class="flex w-full justify-content-center h-full align-items-center">
+          <button type="submit"
+                  class="text-2xl px-6 py-2 border-none border-round-2xl btn-bg-color cursor-pointer h-fit"
+                  :disabled="!isFormValid">
+            Присоединиться
+          </button>
+        </div>
+      </form>
+
+      <!--Диалоговое окно с уведомлением о регистрации-->
+      <Dialog :visible="showDialog" :closable="false" :showHeader="false"
+              class="flex align-items-center p-4 bg-white text-gray-900 text-2xl p-0 gap-2">
+        <div>
+          <b>Поздравляю!</b><br>
+          Вы зарегистрировались в нашей бонусной программе!<br>
+        </div>
+
+        <div class="flex w-full pt-4 justify-content-center align-items-">
+          <button type="submit"
+                  class="text-2xl px-6 py-2 border-none border-round-2xl btn-bg-color cursor-pointer h-fit"
+                  @click="closeDialog">
+            Спасибо
+          </button>
+        </div>
+
+      </Dialog>
+    </div>
+
+    <div id="books" class="flex flex-row gap-2 p-8 justify-content-between footer-bg-color">
+      <div class="flex flex-column gap-2">
+        <p class="text-6xl font-italic">Almanac</p>
+        <p class="text-xl font-light cursor-pointer">almanac@yandex.ru</p>
+        <p class="text-xl font-light cursor-pointer">+7 (963) 990 02 22</p>
       </div>
 
-      <div class="flex flex-row p-4 gap-3 w-full border-2 card-bg-color border-round-2xl shadow-2">
-        <div class="flex-shrink-0">
-          <div class="flex text-6xl label_text_color bg-primary-100 border-circle w-5rem h-5rem align-items-center justify-content-center">
-            3
-          </div>
-        </div>
-        <div class="flex flex-column gap-2">
-          <p class="text-gray-900 text-2xl font-bold mb-2">Получайте выгоду</p>
-          <p class="text-gray-900 text-lg">
-            Обменивайте накопленные баллы на бесплатные напитки, скидки и специальные предложения.
-          </p>
+      <div class="flex flex-column gap-2">
+        <p class="text-3xl">Меню</p>
+        <p class="text-xl font-light cursor-pointer">Сотрудничество</p>
+        <p class="text-xl font-light cursor-pointer">Открыть кофейню</p>
+        <p class="text-xl font-light cursor-pointer">Работа</p>
+        <p class="text-xl font-light cursor-pointer">Адреса</p>
+
+      </div>
+
+      <div class="flex flex-column gap-2">
+        <p class="text-3xl">Следи за нами</p>
+
+        <div class="flex flex-row gap-3 mt-2">
+          <a href="https://t.me/1" target="_blank"
+             class="inline-flex align-items-center justify-content-center w-3rem h-3rem border-circle bg-transparent
+                    no-underline cursor-pointer">
+            <i class="pi pi-telegram text-2xl text-white"></i>
+          </a>
+
+          <a href="https://vk.com/1" target="_blank"
+             class="inline-flex align-items-center justify-content-center w-3rem h-3rem border-circle bg-transparent
+                    no-underline cursor-pointer">
+            <i class="pi pi-whatsapp text-2xl text-white"></i>
+          </a>
+
+          <a href="https://instagram.com/1" target="_blank"
+             class="inline-flex align-items-center justify-content-center w-3rem h-3rem border-circle bg-transparent
+             no-underline cursor-pointer">
+            <i class="pi pi-instagram text-2xl text-white"></i>
+          </a>
         </div>
       </div>
     </div>
-    <div class="flex w-full justify-content-center pb-4">
-      <button class="text-2xl px-6 py-2 border-none border-round-2xl bg-orange-600">Присоединиться</button>
-    </div>
-
   </div>
 </template>
 
 <style scoped>
+
+.footer-bg-color {
+  background-color: #122343;
+}
 .card-bg-color {
   background-color: #ffffff !important;
 }
 
 .label_text_color {
   color: #ac3b61;
+}
+
+.btn-bg-color {
+  background: #ac3b61;
 }
 
 .slogan-bg {

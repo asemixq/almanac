@@ -11,16 +11,16 @@ export default {
       currentMenuId: 1,
       items: [
         {
-          id: 1,
-          label: 'Филиалы',
-          icon: 'pi pi-home',
-          link: '#places'
-        },
-        {
           id: 2,
           label: 'События',
           icon: 'pi pi-calendar',
           link: '#events'
+        },
+        {
+          id: 1,
+          label: 'Филиалы',
+          icon: 'pi pi-home',
+          link: '#places'
         },
         {
           id: 3,
