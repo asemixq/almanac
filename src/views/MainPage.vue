@@ -51,21 +51,21 @@ export default {
           address: "Москва, ул. Осенняя, 11",
           times: ['Пн-Пт: 08:00 - 00:00', 'Сб-Вс: 09:00 - 23:00'],
           phone: "+7 (499) 495 44 01",
-          img: "https://i.pinimg.com/1200x/82/f9/a7/82f9a77731896c20bf1ee47212d509d3.jpg "
+          img: `../src/images/places/IMG_9338.JPG`
         },
         {
           name: "Almanac",
           address: "Москва, Лесная, д. 9",
           times: ['Пн-Пт: 12:00 - 01:00', 'Сб-Вс: 12:00 - 00:00'],
           phone: "+7 (499) 495 44 93",
-          img: "https://gastro-norma.ru/upload/iblock/917/c3nlrpu5k7x16gypj1vs7dxacvz8lhgn.webp"
+          img: `../src/images/places/IMG_9342.JPG`
         },
         {
           name: "Метрополис",
           address: "Москва, Ленинградское шоссе, д. 16А, стр. 4",
           times: ['Пн-Вс: 09:00 - 23:00'],
           phone: "+7 (499) 495 15 72",
-          img: "https://gastro-norma.ru/upload/iblock/917/c3nlrpu5k7x16gypj1vs7dxacvz8lhgn.webp"
+          img: `../src/images/places/IMG_9349.JPG`
         }
       ]
     };
@@ -178,7 +178,7 @@ export default {
       <button class="pi pi-arrow-left text-7xl text-gray-900 border-none bg-transparent cursor-pointer ml-auto"
               @click="prevLocation"/>
 
-      <div class="flex flex-row gap-4 text-xl text-gray-900 bg-transparent align-items-center
+      <div class="flex flex-row gap-4 w-6 text-xl text-gray-900 bg-transparent align-items-center
            justify-content-center m-4">
         <img class="flex-shrink-0 w-full md:w-6 h-25rem border-round-3xl shadow-6"
              :src="currentLocation.img"
