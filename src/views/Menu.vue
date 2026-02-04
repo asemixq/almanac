@@ -50,503 +50,704 @@ export default {
           name: "Десерты"
         },
         {
-          name: "Боулы"
+          name: "Выпечка"
         }
       ],
       eats: [
         {
           id: 1,
-          name: 'Сырники с ягодами',
-          category: 'Еда',
-          subcategory: "Завтраки",
-          price: '690'
-        },
-        {
-          id: 2,
-          name: 'Зеленый салат',
-          category: 'Еда',
-          subcategory: "Салаты",
-          price: '740'
-        },
-        {
-          id: 3,
-          name: 'Боул с курицей',
-          category: 'Еда',
-          subcategory: "Боулы",
-          price: '760'
-        },
-        {
-          id: 4,
-          name: 'Фетучини с курицей',
-          category: 'Еда',
-          subcategory: "Горячие блюда",
-          price: '690'
-        },
-        {
-          id: 5,
-          name: 'Сендвич с курицей',
-          category: 'Еда',
-          subcategory: "Сендвичи",
-          price: '450'
-        },
-        {
-          id: 6,
-          name: 'Чизкейк',
-          category: 'Еда',
-          subcategory: "Десерты",
-          price: '260'
-        },
-        {
-          id: 7,
-          name: 'Творожная запеканка',
+          name: 'Авокадо-тост с яйцом пашот',
           category: 'Еда',
           subcategory: "Завтраки",
           price: '650'
         },
         {
-          id: 8,
-          name: 'Омлет с ветчиной',
+          id: 2,
+          name: 'Банановые оладьи',
           category: 'Еда',
           subcategory: "Завтраки",
-          price: '580'
+          price: '410'
+        },
+        {
+          id: 3,
+          name: 'Блинчики с индейкой и сыром',
+          category: 'Еда',
+          subcategory: "Завтраки",
+          price: '330'
+        },
+        {
+          id: 4,
+          name: 'Блинчики с творогом',
+          category: 'Еда',
+          subcategory: "Завтраки",
+          price: '320'
+        },
+        {
+          id: 5,
+          name: 'Вафли с цеплёнком',
+          category: 'Еда',
+          subcategory: "Завтраки",
+          price: '320'
+        },
+        {
+          id: 6,
+          name: 'Вафли с лососем и крем-чизом',
+          category: 'Еда',
+          subcategory: "Завтраки",
+          price: '420'
+        },
+        {
+          id: 7,
+          name: 'Гречневая каша с запеченными шампиньонами',
+          category: 'Еда',
+          subcategory: "Завтраки",
+          price: '290'
+        },
+        {
+          id: 8,
+          name: 'Овсяная каша с яблоками и корицей',
+          category: 'Еда',
+          subcategory: "Завтраки",
+          price: '310'
         },
         {
           id: 9,
-          name: 'Греческий салат',
+          name: 'Оладьи из цукини с лососем',
           category: 'Еда',
-          subcategory: "Салаты",
-          price: '720'
+          subcategory: "Завтраки",
+          price: '730'
         },
         {
           id: 10,
-          name: 'Салат Цезарь',
+          name: 'Сырники с домашним вареньем и сметаной',
           category: 'Еда',
-          subcategory: "Салаты",
-          price: '780'
+          subcategory: "Завтраки",
+          price: '470'
         },
         {
           id: 11,
-          name: 'Боул с лососем',
+          name: 'Запеканка с тыквой с яблоком',
           category: 'Еда',
-          subcategory: "Боулы",
-          price: '850'
+          subcategory: "Завтраки",
+          price: '250'
         },
         {
           id: 12,
-          name: 'Боул вегетарианский',
+          name: 'Шакшука',
           category: 'Еда',
-          subcategory: "Боулы",
-          price: '680'
+          subcategory: "Завтраки",
+          price: '420'
         },
         {
           id: 13,
-          name: 'Паста Карбонара',
+          name: 'Бефстроганов с пюре',
           category: 'Еда',
           subcategory: "Горячие блюда",
-          price: '720'
+          price: '480'
         },
         {
           id: 14,
-          name: 'Куриные крылышки',
+          name: 'Говяжьи котлеты с птитимом',
           category: 'Еда',
           subcategory: "Горячие блюда",
-          price: '690'
+          price: '450'
         },
         {
           id: 15,
-          name: 'Сендвич с ветчиной',
+          name: 'Котлеты куриные с булгуром',
+          category: 'Еда',
+          subcategory: "Горячие блюда",
+          price: '420'
+        },
+        {
+          id: 16,
+          name: 'Говядина с пюре из батата',
+          category: 'Еда',
+          subcategory: "Горячие блюда",
+          price: '630'
+        },
+        {
+          id: 17,
+          name: 'Жаркое с копченой говядиной',
+          category: 'Еда',
+          subcategory: "Горячие блюда",
+          price: '520'
+        },
+        {
+          id: 18,
+          name: 'Куриное филе с рисом и овощами',
+          category: 'Еда',
+          subcategory: "Горячие блюда",
+          price: '420'
+        },
+        {
+          id: 19,
+          name: 'Лазанья',
+          category: 'Еда',
+          subcategory: "Горячие блюда",
+          price: '650'
+        },
+        {
+          id: 20,
+          name: 'Паста с орзо и цеплёнком',
+          category: 'Еда',
+          subcategory: "Горячие блюда",
+          price: '590'
+        },
+        {
+          id: 21,
+          name: 'Фетучини с курицей и грибами',
+          category: 'Еда',
+          subcategory: "Горячие блюда",
+          price: '420'
+        },
+        {
+          id: 22,
+          name: 'Фетучини с креветками',
+          category: 'Еда',
+          subcategory: "Горячие блюда",
+          price: '480'
+        },
+        {
+          id: 23,
+          name: 'Боул с цеплёнком',
+          category: 'Еда',
+          subcategory: "Салаты",
+          price: '450'
+        },
+        {
+          id: 24,
+          name: 'Боул с запеченым лососем',
+          category: 'Еда',
+          subcategory: "Салаты",
+          price: '510'
+        },
+        {
+          id: 25,
+          name: 'Жаренные баклажаны',
+          category: 'Еда',
+          subcategory: "Салаты",
+          price: '390'
+        },
+        {
+          id: 26,
+          name: 'Зеленый салат с ореховым соусом',
+          category: 'Еда',
+          subcategory: "Салаты",
+          price: '450'
+        },
+        {
+          id: 27,
+          name: 'Цезарь с курицей',
+          category: 'Еда',
+          subcategory: "Салаты",
+          price: '440'
+        },
+        {
+          id: 28,
+          name: 'Цезарь с креветками',
+          category: 'Еда',
+          subcategory: "Салаты",
+          price: '470'
+        },
+        {
+          id: 39,
+          name: 'Бейгл с индейкой',
+          category: 'Еда',
+          subcategory: "Сендвичи",
+          price: '320'
+        },
+        {
+          id: 30,
+          name: 'Грильчиз с говядиной',
+          category: 'Еда',
+          subcategory: "Сендвичи",
+          price: '390'
+        },
+        {
+          id: 31,
+          name: 'Сендвич с индейкой и сыром',
+          category: 'Еда',
+          subcategory: "Сендвичи",
+          price: '290'
+        },
+        {
+          id: 32,
+          name: 'Сендвич с копченым тунцом и яйцом',
           category: 'Еда',
           subcategory: "Сендвичи",
           price: '420'
         },
         {
-          id: 16,
-          name: 'Сендвич вегетарианский',
+          id: 33,
+          name: 'Сендвич с куриным рулетом',
           category: 'Еда',
           subcategory: "Сендвичи",
-          price: '380'
+          price: '270'
         },
         {
-          id: 17,
-          name: 'Тирамису',
+          id: 34,
+          name: 'Сендвич с лососем',
+          category: 'Еда',
+          subcategory: "Сендвичи",
+          price: '420'
+        },
+        {
+          id: 35,
+          name: 'Чизкейк классический',
+          category: 'Еда',
+          subcategory: "Десерты",
+          price: '290'
+        },
+        {
+          id: 36,
+          name: 'Тартолетка малиновая',
+          category: 'Еда',
+          subcategory: "Десерты",
+          price: '310'
+        },
+        {
+          id: 37,
+          name: 'Тарталетка карамельно-ореховая',
           category: 'Еда',
           subcategory: "Десерты",
           price: '320'
         },
         {
-          id: 18,
-          name: 'Маффин шоколадный',
+          id: 38,
+          name: 'Медовик',
           category: 'Еда',
           subcategory: "Десерты",
-          price: '240'
+          price: '250'
         },
-        // Добавляем еще несколько позиций
         {
-          id: 19,
-          name: 'Сырники с медом',
+          id: 39,
+          name: 'Пирожное "Картошка"',
           category: 'Еда',
-          subcategory: "Завтраки",
-          price: '670'
+          subcategory: "Десерты",
+          price: '150'
         },
         {
-          id: 20,
-          name: 'Салат с тунцом',
+          id: 40,
+          name: 'Тирамису',
           category: 'Еда',
-          subcategory: "Салаты",
-          price: '710'
+          subcategory: "Десерты",
+          price: '390'
         },
         {
-          id: 21,
-          name: 'Боул с тофу',
+          id: 41,
+          name: 'Трайфл "Сникерс"',
           category: 'Еда',
-          subcategory: "Боулы",
-          price: '640'
+          subcategory: "Десерты",
+          price: '270'
         },
         {
-          id: 22,
-          name: 'Лазанья',
-          category: 'Еда',
-          subcategory: "Горячие блюда",
-          price: '750'
-        },
-        {
-          id: 23,
-          name: 'Сендвич с сыром',
-          category: 'Еда',
-          subcategory: "Сендвичи",
-          price: '400'
-        },
-        {
-          id: 24,
-          name: 'Брауни',
+          id: 42,
+          name: 'Трайфл черничный',
           category: 'Еда',
           subcategory: "Десерты",
           price: '280'
+        },
+        {
+          id: 43,
+          name: 'Трайфл финиковый',
+          category: 'Еда',
+          subcategory: "Десерты",
+          price: '300'
+        },
+        {
+          id: 44,
+          name: 'Круассан с куриной грудкой и соусом барбекю',
+          category: 'Еда',
+          subcategory: "Выпечка",
+          price: '360'
+        },
+        {
+          id: 45,
+          name: 'Круассан с лососем и мягким сыром',
+          category: 'Еда',
+          subcategory: "Выпечка",
+          price: '380'
+        },
+        {
+          id: 46,
+          name: 'Круассан миндальный',
+          category: 'Еда',
+          subcategory: "Выпечка",
+          price: '285'
+        },
+        {
+          id: 47,
+          name: 'Круассан фисташковый',
+          category: 'Еда',
+          subcategory: "Выпечка",
+          price: '285'
+        },
+        {
+          id: 48,
+          name: 'Круассан с шоколадом',
+          category: 'Еда',
+          subcategory: "Выпечка",
+          price: '285'
+        },
+        {
+          id: 49,
+          name: 'Слойка с корицей и кремом маскарпоне',
+          category: 'Еда',
+          subcategory: "Выпечка",
+          price: '230'
+        },
+        {
+          id: 50,
+          name: 'Слойка с персиком',
+          category: 'Еда',
+          subcategory: "Выпечка",
+          price: '200'
         }
       ],
       drinks: [
-        // Классические напитки
         {
           id: 1,
-          name: 'Латте "Осенний вечер"',
-          description: 'Нежный латте с карамельным сиропом и пенкой из взбитых сливок, украшенный карамельным соусом',
+          name: 'Эспрессо',
+          description: 'Крепкий кофе, приготовленный под высоким давлением. Имеет насыщенный вкус и характерную золотистую пенку',
           category: 'Классические напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          imageUrl: '../src/images/drinks/espresso.png',
           sizes: [
-            { name: 'Маленький', volume: '250 мл', price: 280 },
-            { name: 'Средний', volume: '350 мл', price: 320 },
-            { name: 'Большой', volume: '450 мл', price: 370 }
+            { name: 'Стандартный', volume: '60 мл', price: 220 }
+          ],
+          isRecommended: true,
+        },
+        {
+          id: 2,
+          name: 'Американо',
+          description: 'Эспрессо, разбавленный горячей водой. Обладает насыщенным вкусом, но более легкой текстурой, чем чистый эспрессо. Идеален для большой чашки.',
+          category: 'Классические напитки',
+          imageUrl: '../src/images/drinks/americano.jpg',
+          sizes: [
+            { name: 'Стандартный', volume: '200 мл', price: 220 }
+          ],
+          isRecommended: false,
+        },
+        {
+          id: 3,
+          name: 'Капучино',
+          description: 'Идеальный баланс эспрессо, молока и воздушной молочной пены. Классика, где кофе и нежность молока звучат в унисон.',
+          category: 'Классические напитки',
+          imageUrl: '../src/images/drinks/capusino.jpg',
+          sizes: [
+            { name: 'Средний', volume: '200 мл', price: 250 },
+            { name: 'Большой', volume: '300 мл', price: 270 }
+          ],
+          isRecommended: true,
+        },
+        {
+          id: 4,
+          name: 'Латте',
+          description: 'Нежный и сливочный напиток на основе эспрессо с большим количеством молока и тонкой пенкой. Мягкий кофейный вкус для неторопливого наслаждения.',
+          category: 'Классические напитки',
+          imageUrl: '../src/images/drinks/latte.jpg',
+          sizes: [
+            { name: 'Средний', volume: '300 мл', price: 280 },
+            { name: 'Большой', volume: '400 мл', price: 320 }
           ],
           isRecommended: true,
         },
         {
           id: 5,
-          name: 'Капучино "Классический"',
-          description: 'Идеальное сочетание эспрессо и молочной пенки с нежной текстурой',
+          name: 'Флет уайт',
+          description: 'Австралийская классика. Готовится на двойном эспрессо с молоком, взбитым в плотную, но не воздушную пену, создающую гладкую пенку.',
           category: 'Классические напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          imageUrl: '../src/images/drinks/flet.jpg',
           sizes: [
-            { name: 'Маленький', volume: '200 мл', price: 260 },
-            { name: 'Средний', volume: '300 мл', price: 300 },
-            { name: 'Большой', volume: '400 мл', price: 350 }
+            { name: 'Стандартный', volume: '200 мл', price: 250 }
           ],
-          isRecommended: true,
+          isRecommended: false,
         },
         {
           id: 6,
-          name: 'Американо "Бодрость"',
-          description: 'Крепкий черный кофе для настоящих ценителей',
+          name: 'Раф',
+          description: 'Приготовлен на основе эспрессо, сливок и ванильного сахара, взбитых вместе. Невероятно нежный, кремовый и сладковатый',
           category: 'Классические напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          imageUrl: '../src/images/drinks/raf.jpg',
           sizes: [
-            { name: 'Стандартный', volume: '200 мл', price: 220 },
-            { name: 'Большой', volume: '300 мл', price: 270 }
+            { name: 'Стандартный', volume: '300 мл', price: 320 }
           ],
-          isRecommended: false,
+          isRecommended: true,
         },
+
         {
           id: 7,
-          name: 'Эспрессо "Итальянский"',
-          description: 'Концентрированный кофе с насыщенным вкусом и ароматом',
-          category: 'Классические напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Порция', volume: '30 мл', price: 180 }
-          ],
-          isRecommended: true,
-        },
-        {
-          id: 14,
-          name: 'Раф "Ванильный"',
-          description: 'Кофейный напиток со сливками и ванильным сиропом',
-          category: 'Классические напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Стандартный', volume: '300 мл', price: 350 },
-            { name: 'Большой', volume: '400 мл', price: 420 }
-          ],
-          isRecommended: true,
-        },
-        {
-          id: 18,
-          name: 'Мокачино',
-          description: 'Кофе с шоколадом и молоком',
-          category: 'Классические напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Маленький', volume: '250 мл', price: 300 },
-            { name: 'Средний', volume: '350 мл', price: 350 },
-            { name: 'Большой', volume: '450 мл', price: 400 }
-          ],
-          isRecommended: true,
-        },
-
-        // Авторские напитки
-        {
-          id: 19,
-          name: 'Латте "Медовая груша"',
-          description: 'Авторский латте с сиропом груши, медом и корицей',
+          name: 'Шепот зеркал',
+          description: 'Двойной шот эспрессо, влитый в тоник с маракуйей и щепоткой розовой гималайской соли. Невероятно чистый, освежающий вкус с игристым послевкусием и лёгкой солёной пенкой.',
           category: 'Авторские напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          imageUrl: '../src/images/drinks/a1.png',
           sizes: [
-            { name: 'Средний', volume: '350 мл', price: 380 },
-            { name: 'Большой', volume: '450 мл', price: 440 }
+            { name: 'Средний', volume: '250 мл', price: 280 },
+            { name: 'Большой', volume: '350 мл', price: 330 }
           ],
           isRecommended: true,
-        },
-        {
-          id: 20,
-          name: 'Капучино "Карамельный орех"',
-          description: 'Авторский капучино с карамелью и фундуком',
-          category: 'Авторские напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Средний', volume: '350 мл', price: 360 },
-            { name: 'Большой', volume: '450 мл', price: 420 }
-          ],
-          isRecommended: true,
-        },
-        {
-          id: 21,
-          name: 'Раф "Кокосовый рай"',
-          description: 'Авторский раф с кокосовым сиропом и стружкой кокоса',
-          category: 'Авторские напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Стандартный', volume: '300 мл', price: 390 },
-            { name: 'Большой', volume: '400 мл', price: 460 }
-          ],
-          isRecommended: true,
-        },
-        {
-          id: 22,
-          name: 'Матча "Ягодный взрыв"',
-          description: 'Авторский матча латте с ягодным сиропом',
-          category: 'Авторские напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Стандартный', volume: '300 мл', price: 400 },
-            { name: 'Большой', volume: '400 мл', price: 470 }
-          ],
-          isRecommended: false,
-        },
-
-        // Холодные напитки
-        {
-          id: 12,
-          name: 'Лимонад "Мятный"',
-          description: 'Освежающий лимонад с мятой и лаймом',
-          category: 'Холодные напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Стандартный', volume: '400 мл', price: 320 },
-            { name: 'Большой', volume: '600 мл', price: 420 }
-          ],
-          isRecommended: true,
-        },
-        {
-          id: 13,
-          name: 'Молочный коктейль "Шоколадный"',
-          description: 'Нежный молочный коктейль с шоколадным сиропом',
-          category: 'Холодные напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Стандартный', volume: '400 мл', price: 380 },
-            { name: 'Большой', volume: '600 мл', price: 480 }
-          ],
-          isRecommended: true,
-        },
-        {
-          id: 17,
-          name: 'Кола со льдом',
-          description: 'Классическая кола со льдом',
-          category: 'Холодные напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Банка', volume: '330 мл', price: 180 },
-            { name: 'Стакан', volume: '500 мл', price: 220 }
-          ],
-          isRecommended: false,
-        },
-        {
-          id: 23,
-          name: 'Айс латте',
-          description: 'Холодный латте со льдом',
-          category: 'Холодные напитки',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Средний', volume: '400 мл', price: 340 },
-            { name: 'Большой', volume: '500 мл', price: 410 }
-          ],
-          isRecommended: true,
-        },
-
-        // Чаи
-        {
-          id: 2,
-          name: 'Матча латте',
-          description: 'Традиционный японский чай матча, взбитый с молоком в нежный кремовый напиток',
-          category: 'Чаи',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Стандартный', volume: '300 мл', price: 350 },
-            { name: 'Большой', volume: '400 мл', price: 420 }
-          ],
-          isRecommended: false,
         },
         {
           id: 8,
-          name: 'Чай "Английский завтрак"',
-          description: 'Классический черный чай с насыщенным вкусом',
-          category: 'Чаи',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          name: 'Серое небо',
+          description: 'Латте с добавлением натурального пищевого угля, кокосового молока и финикового сиропа.',
+          category: 'Авторские напитки',
+          imageUrl: '../src/images/drinks/a2.png',
           sizes: [
-            { name: 'Чайник', volume: '500 мл', price: 320 },
-            { name: 'Чашка', volume: '250 мл', price: 200 }
+            { name: 'Стандартный', volume: '400 мл', price: 380 }
+          ],
+          isRecommended: true,
+        },
+        {
+          id: 9,
+          name: 'Восточный ветер',
+          description: 'Традиционный раф, приготовленный на основе ванильно-имбирного сиропа, сливок и апельсиновой цедры, взбитый до состояния облака.',
+          category: 'Авторские напитки',
+          imageUrl: '../src/images/drinks/a3.jpg',
+          sizes: [
+            { name: 'Средний', volume: '300 мл', price: 320 },
+            { name: 'Большой', volume: '400 мл', price: 370 }
           ],
           isRecommended: false,
         },
         {
-          id: 9,
-          name: 'Зеленый чай "Жасмин"',
-          description: 'Нежный зеленый чай с цветами жасмина',
-          category: 'Чаи',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          id: 10,
+          name: 'Хвойный шепот',
+          description: 'Капучино с фирменным сиропом из облепихи, можжевельника и кленового сиропа. Украшается веточкой розмарина.',
+          category: 'Авторские напитки',
+          imageUrl: '../src/images/drinks/a4.png',
           sizes: [
-            { name: 'Чайник', volume: '500 мл', price: 350 },
-            { name: 'Чашка', volume: '250 мл', price: 220 }
+            { name: 'Стандартный', volume: '300 мл', price: 340 }
+          ],
+          isRecommended: true,
+        },
+        {
+          id: 11,
+          name: 'Дымный переулок',
+          description: 'Холодный американо, настоянный на копчёных палочках ванили и щепотке молотого чёрного перца, с добавлением тоника.',
+          category: 'Авторские напитки',
+          imageUrl: '../src/images/drinks/a5.png',
+          sizes: [
+            { name: 'Стандартный', volume: '350 мл', price: 300 }
+          ],
+          isRecommended: false,
+        },
+        {
+          id: 12,
+          name: 'Вечерний фольклор',
+          description: 'Крепкий фильтр-кофе со взбитыми сливками и сиропом, имитирующим вкус виски (с дымными, солодовыми и ванильными нотами).',
+          category: 'Авторские напитки',
+          imageUrl: '../src/images/drinks/a6.png',
+          sizes: [
+            { name: 'Стандартный', volume: '250 мл', price: 360 }
+          ],
+          isRecommended: false,
+        },
+        {
+          id: 13,
+          name: 'Темный мед',
+          description: 'Густой горячий шоколад на миндальном молоке с добавлением сиропа из жареного фундука, щепотки чили и апельсинового масла.',
+          category: 'Авторские напитки',
+          imageUrl: '../src/images/drinks/a6.jpg',
+          sizes: [
+            { name: 'Средний', volume: '300 мл', price: 370 },
+            { name: 'Большой', volume: '400 мл', price: 420 }
+          ],
+          isRecommended: true,
+        },
+
+        {
+          id: 14,
+          name: 'Айс латте',
+          description: 'Прохладная классика. Двойной эспрессо, лед и молоко, создающие освежающий и сбалансированный кофейный коктейль. ',
+          category: 'Холодные напитки',
+          imageUrl: '../src/images/drinks/x2.jpg',
+          sizes: [
+            { name: 'Средний', volume: '300 мл', price: 280 },
+            { name: 'Большой', volume: '400 мл', price: 320 }
           ],
           isRecommended: true,
         },
         {
           id: 15,
-          name: 'Чай "Фруктовый микс"',
-          description: 'Ароматный фруктовый чай с ягодами',
-          category: 'Чаи',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          name: 'Колд Брю',
+          description: 'Наш кофе, приготовленный методом холодного заваривания. Отличается мягким, сбалансированным вкусом без горечи и высокой крепостью. Подается со льдом.',
+          category: 'Холодные напитки',
+          imageUrl: '../src/images/drinks/x4.jpg',
           sizes: [
-            { name: 'Чайник', volume: '500 мл', price: 380 },
-            { name: 'Чашка', volume: '250 мл', price: 240 }
+            { name: 'Стандартный', volume: '300 мл', price: 240 }
           ],
           isRecommended: false,
         },
         {
-          id: 19,
-          name: 'Чай "Ромашковый"',
-          description: 'Успокаивающий травяной чай',
-          category: 'Чаи',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          id: 16,
+          name: 'Эспрессо-тоник',
+          description: 'Охлаждённый тоник, двойной эспрессо и лёд. Освежающая горчинка тоника и цитрусовые ноты идеально оттеняют кофе, создавая яркий игристый вкус.',
+          category: 'Холодные напитки',
+          imageUrl: '../src/images/drinks/x3.jpg',
           sizes: [
-            { name: 'Чайник', volume: '500 мл', price: 300 },
-            { name: 'Чашка', volume: '250 мл', price: 180 }
+            { name: 'Стандартный', volume: '300 мл', price: 290 }
           ],
           isRecommended: false,
+        },
+        {
+          id: 17,
+          name: 'Фильтр "Станция мир"',
+          description: 'фильтр, сироп из горных трав, клюква, сливочно-сырный крем сироп собственного приготовления',
+          category: 'Холодные напитки',
+          imageUrl: '../src/images/drinks/x1.jpg',
+          sizes: [
+            { name: 'Стандартный', volume: '300 мл', price: 280 }
+          ],
+          isRecommended: true,
         },
 
-        // Лимонады
         {
-          id: 24,
-          name: 'Лимонад "Классический"',
-          description: 'Освежающий лимонад с лимоном и мятой',
-          category: 'Лимонады',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          id: 18,
+          name: 'Манго - Цитрус',
+          description: 'Освежающий микс тропической сладости спелого манго с яркой кислинкой лимона и лайма. Согревающий и бодрящий.',
+          category: 'Чаи',
+          imageUrl: '../src/images/drinks/tea1.png',
           sizes: [
-            { name: 'Стандартный', volume: '400 мл', price: 300 },
-            { name: 'Большой', volume: '600 мл', price: 400 }
+            { name: 'Стандартный', volume: '300 мл', price: 280 }
           ],
           isRecommended: true,
         },
         {
-          id: 25,
-          name: 'Лимонад "Ягодный"',
-          description: 'Лимонад с клубникой и малиной',
-          category: 'Лимонады',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          id: 19,
+          name: 'Каркаде - Гранат',
+          description: 'Горячий яркий тандем: насыщенная кислинка гибискуса с глубокой сладостью граната. Бодрящий и согревающий напиток с рубиновым цветом.',
+          category: 'Чаи',
+          imageUrl: '../src/images/drinks/tea2.png',
           sizes: [
-            { name: 'Стандартный', volume: '400 мл', price: 340 },
-            { name: 'Большой', volume: '600 мл', price: 440 }
+            { name: 'Стандартный', volume: '300 мл', price: 280 }
+          ],
+          isRecommended: false,
+        },
+        {
+          id: 20,
+          name: 'Облепиха - Клюква',
+          description: 'Согревающий витаминный взрыв: яркая кислинка облепихи и терпкая ягода клюквы в горячем гармоничном дуэте.',
+          category: 'Чаи',
+          imageUrl: '../src/images/drinks/tea3.png',
+          sizes: [
+            { name: 'Стандартный', volume: '300 мл', price: 280 }
+          ],
+          isRecommended: false,
+        },
+        {
+          id: 21,
+          name: 'Имбирь - Лимон - Мед',
+          description: 'Горячий огненный эликсир: острая свежесть имбиря, яркость лимона и мягкая сладость мёда. Идеальная защита от холода и хандры.',
+          category: 'Чаи',
+          imageUrl: '../src/images/drinks/tea4.png',
+          sizes: [
+            { name: 'Стандартный', volume: '300 мл', price: 280 }
+          ],
+          isRecommended: false,
+        },
+
+        {
+          id: 22,
+          name: 'Малина - Маракуйя',
+          description: 'Освежающий микс сочной ягодной сладости и яркой тропической кислотности. Идеальный баланс вкусов в прохладном напитке.',
+          category: 'Лимонады',
+          imageUrl: '../src/images/drinks/l1.jpg',
+          sizes: [
+            { name: 'Средний', volume: '300 мл', price: 310 },
+            { name: 'Большой', volume: '400 мл', price: 380 }
+          ],
+          isRecommended: true,
+        },
+        {
+          id: 23,
+          name: 'Гранат - Клюква',
+          description: 'Сбалансированный дуэт насыщенной сладости граната и яркой кислинки клюквы. Прохладный, тонизирующий и не приторный напиток.',
+          category: 'Лимонады',
+          imageUrl: '../src/images/drinks/l2.jpg',
+          sizes: [
+            { name: 'Средний', volume: '300 мл', price: 310 },
+            { name: 'Большой', volume: '400 мл', price: 380 }
+          ],
+          isRecommended: false,
+        },
+        {
+          id: 24,
+          name: 'Ягодный',
+          description: 'Классическое сочетание спелой клубники, сладкой малины и лёгкой терпкости смородины. Освежающий и гармоничный вкус лета.',
+          category: 'Лимонады',
+          imageUrl: '../src/images/drinks/l4.jpg',
+          sizes: [
+            { name: 'Средний', volume: '300 мл', price: 310 },
+            { name: 'Большой', volume: '400 мл', price: 380 }
+          ],
+          isRecommended: false,
+        },
+        {
+          id: 25,
+          name: 'Персик - Каламанси',
+          description: 'Освежающее сочетание нежной сладости персика и цитрусовой свежести каламанси. Газированный, лёгкий и сбалансированный напиток.',
+          category: 'Лимонады',
+          imageUrl: '../src/images/drinks/l3.jpg',
+          sizes: [
+            { name: 'Средний', volume: '300 мл', price: 310 },
+            { name: 'Большой', volume: '400 мл', price: 380 }
+          ],
+          isRecommended: true,
+        },
+
+        {
+          id: 3,
+          name: 'Апельсин',
+          description: 'Свежевыжатый апельсиновый сок',
+          category: 'Фреши',
+          imageUrl: '../src/images/drinks/f1.jpg',
+          sizes: [
+            { name: 'Стандартный', volume: '300 мл', price: 390 }
           ],
           isRecommended: true,
         },
         {
           id: 26,
-          name: 'Лимонад "Имбирный"',
-          description: 'Пряный лимонад с имбирем и медом',
-          category: 'Лимонады',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Стандартный', volume: '400 мл', price: 320 },
-            { name: 'Большой', volume: '600 мл', price: 420 }
-          ],
-          isRecommended: false,
-        },
-
-        // Фреши
-        {
-          id: 3,
-          name: 'Фреш "Апельсиновый"',
-          description: 'Свежевыжатый апельсиновый сок',
-          category: 'Фреши',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Стандартный', volume: '300 мл', price: 380 },
-            { name: 'Большой', volume: '450 мл', price: 480 }
-          ],
-          isRecommended: true,
-        },
-        {
-          id: 10,
-          name: 'Фреш "Яблочный"',
+          name: 'Яблоко',
           description: 'Свежевыжатый яблочный сок',
           category: 'Фреши',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          imageUrl: '../src/images/drinks/f4.jpg',
           sizes: [
-            { name: 'Стандартный', volume: '300 мл', price: 350 },
-            { name: 'Большой', volume: '450 мл', price: 450 }
-          ],
-          isRecommended: false,
-        },
-        {
-          id: 11,
-          name: 'Фреш "Морковный"',
-          description: 'Свежевыжатый морковный сок с яблоком',
-          category: 'Фреши',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
-          sizes: [
-            { name: 'Стандартный', volume: '300 мл', price: 320 },
-            { name: 'Большой', volume: '450 мл', price: 420 }
+            { name: 'Стандартный', volume: '300 мл', price: 320 }
           ],
           isRecommended: true,
         },
         {
-          id: 16,
-          name: 'Фреш "Ананасовый"',
-          description: 'Свежевыжатый ананасовый сок',
+          id: 27,
+          name: 'Морковь',
+          description: 'Свежевыжатый морковный сок с яблоком',
           category: 'Фреши',
-          imageUrl: 'https://i0.wp.com/www.m5zn.com/wp-content/uploads/2022/05/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D9%81%D9%8A-%D8%AA%D9%8A%D9%85-%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2.webp?ssl=1',
+          imageUrl: '../src/images/drinks/f6.jpg',
           sizes: [
-            { name: 'Стандартный', volume: '300 мл', price: 420 },
-            { name: 'Большой', volume: '450 мл', price: 520 }
+            { name: 'Стандартный', volume: '300 мл', price: 290 }
+          ],
+          isRecommended: false,
+        },
+        {
+          id: 28,
+          name: 'Грейпфрут',
+          description: 'Свежевыжатый грейпфрутовый сок',
+          category: 'Фреши',
+          imageUrl: '../src/images/drinks/f2.jpg',
+          sizes: [
+            { name: 'Стандартный', volume: '300 мл', price: 420 }
+          ],
+          isRecommended: false,
+        },
+        {
+          id: 29,
+          name: 'Гранат',
+          description: 'Свежевыжатый гранатовый сок',
+          category: 'Фреши',
+          imageUrl: '../src/images/drinks/f3.jpg',
+          sizes: [
+            { name: 'Стандартный', volume: '300 мл', price: 370 }
           ],
           isRecommended: true,
         }
