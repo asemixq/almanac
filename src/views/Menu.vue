@@ -775,7 +775,7 @@ export default {
 <template>
   <div class="flex flex-column h-screen w-full gap-4 align-items-center">
     <div class="flex flex-column w-9 gap-5 h-full">
-      <div id="bonuses" class="text-7xl font-normal text-gray-900">
+      <div class="text-7xl font-normal text-gray-900">
         Меню
       </div>
 
@@ -833,14 +833,6 @@ export default {
                     </div>
                   </div>
                 </div>
-
-                <div class="flex gap-4 text-lg text-gray-600">
-                  <div v-if="drink.allergens"
-                       class="flex align-items-center gap-1">
-                    <i class="pi pi-exclamation-circle"></i>
-                    <span>Аллергены: {{ drink.allergens.join(', ') }}</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -877,10 +869,10 @@ export default {
 </template>
 
 <style scoped>
-
 .footer-bg-color {
   background-color: #122343;
 }
+
 .card-bg-color {
   background-color: #ffffff !important;
 }
@@ -892,5 +884,4 @@ export default {
 .btn-bg-color {
   background: #ac3b61;
 }
-
 </style>
